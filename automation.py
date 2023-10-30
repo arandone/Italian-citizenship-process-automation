@@ -204,7 +204,7 @@ def start_automation(url, email, user_pass):
     sleep(0.7)
 
 
-def automate(url, email, user_pass, email_pass, google_app_pass, gmail, opcion, embassy, driver : webdriver.Chrome):
+def automate(url, email, user_pass, email_pass, google_app_pass, gmail, option, embassy, driver : webdriver.Chrome):
     
     while True:
 
@@ -218,7 +218,7 @@ def automate(url, email, user_pass, email_pass, google_app_pass, gmail, opcion, 
         
             if embassy == 'bs':
 
-                if find_option_chosen(embassy, opcion, driver, rows):
+                if find_option_chosen(embassy, option, driver, rows):
 
                     pass
 
@@ -234,11 +234,11 @@ def automate(url, email, user_pass, email_pass, google_app_pass, gmail, opcion, 
 
                     rows = driver.find_elements(By.TAG_NAME, 'tr')
 
-                    find_option_chosen(embassy, opcion, driver, rows)
+                    find_option_chosen(embassy, option, driver, rows)
 
             else:
 
-                find_option_chosen(embassy, opcion, driver, rows)
+                find_option_chosen(embassy, option, driver, rows)
 
             element = WebDriverWait(driver, 10).until(EC.presence_of_element_located, (By.XPATH, "//input[@type='checkbox']"))
 
@@ -321,7 +321,7 @@ def automate(url, email, user_pass, email_pass, google_app_pass, gmail, opcion, 
             sleep(3)
 
             msg = f"""
-            El proceso de reclamar un turno para {options_list[embassy][opcion][0] if len(options_list[embassy][opcion]) == 2 else options_list[embassy][opcion]} ha sido terminado satisfactoriamente,
+            El proceso de reclamar un turno para {options_list[embassy][option][0] if len(options_list[embassy][option]) == 2 else options_list[embassy][option]} ha sido terminado satisfactoriamente,
             Este turno quedo agendado para el dia {app_date}.
             Otras fechas disponibles son:
             {available_dates}
