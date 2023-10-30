@@ -41,10 +41,10 @@ with open('user_info.json') as f:
 options_list = {
 
     'la' : {
-                'cd'  : 'Citizenship appointment by descent', 
-                'nv'    : 'Italian National Visas', 
-                'pp' : 'Passport', 
-                'sv' : 'Schengen Visas',
+                'cd'  : 'CITTADINANZA', 
+                'nv'    : 'VISTI', 
+                'pp' : 'DOCUMENTI DI IDENTITA’/VIAGGIO', 
+                'sv' : 'VISTI',
             },
 }
 
@@ -52,7 +52,7 @@ options_list2 = {
                 'cdp'   : 'Appuntamento ricostruzione Cittadinanza',
                 'vn'  : 'Ufficio Visti Nazionali',
                 'di' : 'Passaporti',
-                'vs'    : 'Ufficio Visti Schengen',
+                'vs'    : 'Ufficio Visti(Schengen)',
                 }
     
 
