@@ -40,61 +40,19 @@ with open('user_info.json') as f:
 
 options_list = {
 
-    'urm' : {
-                'div'  : 'DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 
-                'l'    : 'LEGALIZACIONES', 
-                'rpec' : 'REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL', 
-                'ci' : ['CIUDADANÍA', 'Ciudadanía - reservas a partir del 01/11/2021'],
-                'cihma' : ['CIUDADANÍA', 'Ciudadanía para hijos mayores de edad de ciudadanos ya registrados - calendaro desde el 01/11/2021']
+    'la' : {
+                'cd'  : 'Citizenship appointment by descent', 
+                'nv'    : 'Italian National Visas', 
+                'pp' : 'Passport', 
+                'sv' : 'Schengen Visas',
             },
-
-    'ba' : {
-                'divepas'  : ['DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 'Entrega de pasaportes'],
-                'divspas'  : ['DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 'Solicitud de Pasaporte'],
-                'rsi' : ['REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL', 'Vice Consulado Honorario en San Isidro'],
-                'rtf' : ['REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL', 'Corresponsal Consular en Tres de Febrero'],
-                'rz' : ['REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL', 'Corresponsal Consular en Zarate'],
-                'rm' : ['REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL', 'Corresponsal Consular en Merlo'],
-                'ci' : ['CIUDADANÍA', 'Hijos directos mayores de edad'],
-                'cirec' : ['CIUDADANÍA', 'Reconstrucción de Ciudadania'],
-                'scn' : ['SERVICIOS CONSULARES', 'Notarial'],
-                'sce' : ['SERVICIOS CONSULARES', 'Estudios'],
-                'scln' : ['SERVICIOS CONSULARES', 'Legalizaciones para Naturalización'],
-                'scrc' : ['SERVICIOS CONSULARES', 'Certificación de traducciones actas del Registro Civil'],
-                'scps' : ['SERVICIOS CONSULARES', 'Oficina de Pensiones - Certificado Supervivencia'],
-                'scn' : ['SERVICIOS CONSULARES', 'Visas'],
-
-            },
-    
-    'cor' : {  
-                'div'  : 'DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 
-                'l'    : 'LEGALIZACIONES', 
-                'sc'   : 'SERVICIOS CONSULARES',
-                'ci' : 'CIUDADANÍA'
-            },
-
-    'ros' : {
-                'divp'  : ['DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 'Pasaportes'],
-                'divpos'  : ['DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 'PASSAPORTI POSADAS - Emisión de pasaportes'],
-                'divcon'  : ['DOCUMENTOS DE IDENTIDAD Y DE VIAJE', 'CONCORDIA - Emisión de pasaportes'],
-                'ldoc'    : ['LEGALIZACIONES', 'Legalización de documentación para trámites de ciudadanía italiana a presentar en Italia'], 
-                'ldv'    : ['LEGALIZACIONES', 'Declaración de valor'], 
-                'sc'   : 'SERVICIOS CONSULARES',
-                'ci' : 'CIUDADANÍA',
-                'cf' : 'CÓDIGO FISCAL',
-                'rpec' : 'REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL',     
-            }
-
 }
 
 options_list2 = {
-                'sc'   : 'SERVICIOS CONSULARES',
-                'div'  : 'DOCUMENTOS DE IDENTIDAD Y DE VIAJE',
-                'vfue' : ['VISADOS', 'Solamente familiares de ciudadanos UE'],
-                'l'    : 'LEGALIZACIONES',
-                'vtt'  : ['VISADOS', 'Todas tipologias de Visados'],
-                'rpec' : 'REGISTRO DE LA POBLACIÓN Y ESTADO CIVIL',
-                'vdvv' : ['VISADOS', 'Declaraciones de Valor y Visados de Estudio - Estudiantes con preinscripciòn Universitaly']
+                'cdp'   : 'Appuntamento ricostruzione Cittadinanza',
+                'vn'  : 'Ufficio Visti Nazionali',
+                'di' : 'Passaporti',
+                'vs'    : 'Ufficio Visti Schengen',
                 }
     
 
